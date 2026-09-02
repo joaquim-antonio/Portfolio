@@ -51,21 +51,21 @@ const SocialsBlock: React.FC<{ onEmailClick: () => void }> = ({
 
   const socialLinks: SocialLink[] = [
     {
-      href: 'https://www.linkedin.com/in/joaquim-antonio/',
+      href: 'https://www.linkedin.com/in/eduardo-reis-253054359/',
       label: t("pages.contatos.linkedin"),
       icon: <User size={28} />,
       bg: 'bg-zinc-800',
       text: 'text-white',
     },
     {
-      href: 'https://github.com/joaquim-antonio',
+      href: 'https://github.com/Eduardo-Reis-dev',
       label: t("pages.contatos.github"),
       icon: <Code2 size={28} />,
       bg: 'bg-zinc-800',
       text: 'text-white',
     },
     {
-      href: 'https://wa.me/5533998640504',
+      href: 'https://wa.me/5531991165697',
       label: t("pages.contatos.whatsapp"),
       icon: <MessageCircleMore size={28} />,
       bg: 'bg-zinc-800',
@@ -78,7 +78,7 @@ const SocialsBlock: React.FC<{ onEmailClick: () => void }> = ({
       text: 'text-zinc-800',
       onClick: onEmailClick,
     },
-  ]
+  ];
 
   const sharedClasses =
     'flex items-center gap-2 rounded-full border border-zinc-800 px-7 py-3 text-base font-semibold shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-xl hover:border-white focus:outline-none focus:ring-2 focus:ring-white bg-opacity-80';
@@ -103,6 +103,8 @@ const SocialsBlock: React.FC<{ onEmailClick: () => void }> = ({
             key={link.label}
             href={link.href}
             aria-label={link.label}
+            target="_blank"
+            rel="noopener noreferrer"
             className={twMerge(sharedClasses, link.bg, link.text)}
             style={{ minWidth: 140, minHeight: 56 }}
             tabIndex={0}
