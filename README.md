@@ -2,7 +2,7 @@
 
 Portfólio pessoal desenvolvido em React + TypeScript para apresentar projetos, experiência profissional e informações de contato. Suporta dois idiomas (pt/en) via `react-i18next`.
 
-Acesse em: [link para o repositório](https://portfolio-rwtj.onrender.com)
+Acesse em: [link...](https://portfolio-rwtj.onrender.com)
 
 Fique à vontade para editar este modelo e usar como seu. Para substituir os dados, siga as instruções em [ALTERACOES.md](./ALTERACOES.md).
 
