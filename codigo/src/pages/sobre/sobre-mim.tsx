@@ -16,13 +16,13 @@ const HeroSection: React.FC = () => {
           className="relative size-64 rounded-full shadow-xl z-10 object-cover"
         />
       </div>
-      <h1 className="text-2xl md:text-4xl font-extrabold leading-tight tracking-tight font-geist drop-shadow-lg">
+      <h1 className="text-2xl md:text-4xl font-extrabold leading-tight tracking-tight font-sans drop-shadow-lg">
         {t("pages.sobreMim.saudacao")} <strong>Joaquim</strong>
       </h1>
-      <p className="text-xl md:text-xl text-zinc-300 max-w-lg mx-auto font-inter font-normal">
+      <p className="text-xl md:text-xl text-zinc-300 max-w-lg mx-auto font-sans font-normal">
         <Trans i18nKey="pages.sobreMim.bio" components={{ strong: <strong /> }} />
       </p>
-      <p className="text-xl md:text-xl text-zinc-300 max-w-lg mx-auto font-inter font-normal">
+      <p className="text-xl md:text-xl text-zinc-300 max-w-lg mx-auto font-sans font-normal">
         <Trans
           i18nKey="pages.sobreMim.cta"
           components={{
@@ -40,7 +40,7 @@ export const SobreMim = () => {
   const arr = [Logos.tailwindcss, Logos.framer, Logos.nextjs, Logos.aws,]
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-zinc-950 px-4 py-16 text-zinc-50 font-inter relative overflow-hidden">
+    <div className="min-h-screen w-full flex items-center justify-center bg-zinc-950 px-4 py-16 text-zinc-50 font-sans relative overflow-hidden">
       <BackButton />
       <div className="w-full max-w-3xl flex flex-col items-center gap-12 z-10">
         <HeroSection />
@@ -55,11 +55,7 @@ export const SobreMim = () => {
           ))}
         </Marquee>
       </div>
-      <style>{`
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
-      .font-inter { font-family: 'Inter', 'Geist', system-ui, sans-serif; }
-      .font-geist { font-family: 'Geist', 'Inter', system-ui, sans-serif; }
-    `}</style>
+
     </div>
   );
 };

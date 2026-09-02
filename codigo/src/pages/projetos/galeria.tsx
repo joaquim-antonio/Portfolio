@@ -116,7 +116,7 @@ export function Lightbox({
       </button>
 
       {label && (
-        <p className="fixed bottom-5 left-1/2 z-10 -translate-x-1/2 rounded-full bg-zinc-900/80 px-4 py-1.5 font-mono text-xs tracking-widest text-zinc-300 backdrop-blur">
+        <p className="fixed bottom-5 left-1/2 z-10 -translate-x-1/2 rounded-full bg-zinc-900/80 px-4 py-1.5 font-sans text-xs tracking-widest text-zinc-300 backdrop-blur">
           {label}
         </p>
       )}

@@ -18,7 +18,7 @@ export function ProjetoDetalhe() {
   }
 
   return (
-    <div className="min-h-screen w-full bg-zinc-950 text-zinc-50 font-inter">
+    <div className="min-h-screen w-full bg-zinc-950 text-zinc-50 font-sans">
 
       <BackButton />
 
@@ -41,7 +41,7 @@ export function ProjetoDetalhe() {
               {project.title}
             </h1>
             {project.credit && (
-              <p className="font-mono text-xs uppercase tracking-[0.14em] text-zinc-500">
+              <p className="font-sans text-xs uppercase tracking-[0.14em] text-zinc-500">
                 {project.credit}
               </p>
             )}
@@ -153,10 +153,7 @@ export function ProjetoDetalhe() {
         media="video"
       />
 
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
-        .font-inter { font-family: 'Inter', 'Geist', system-ui, sans-serif; }
-      `}</style>
+
     </div>
   )
 }

@@ -33,7 +33,7 @@ export function Projetos() {
               {active.title}
             </h1>
             {active.subtitle && (
-              <p className="text-sm text-zinc-400 font-mono uppercase tracking-widest">
+              <p className="text-sm text-zinc-400 font-sans uppercase tracking-widest">
                 {active.subtitle}
               </p>
             )}
