@@ -10,7 +10,7 @@ export interface EmailResult {
   message?: string
 }
 
-const ACCESS_KEY = "776453b9-0628-4908-aa1a-cda96b3a7f62"
+const ACCESS_KEY = import.meta.env.VITE_ACCESS_KEY as string
 const WEB3FORMS_URL = "https://api.web3forms.com/submit"
 
 export async function sendEmail(
